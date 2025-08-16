@@ -1,0 +1,37 @@
+{
+  "name": "rescript-parser",
+  "version": "0.0.1",
+  "description": "ReScript parser for React Native TurboModules and Native Components",
+  "main": "index.js",
+  "keywords": [
+    "rescript",
+    "parser",
+    "react-native",
+    "turbomodule",
+    "native-component",
+    "codegen",
+    "flow",
+    "ast"
+  ],
+  "author": "shivamshashank44@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricku44/rescript-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ricku44/rescript-parser/issues"
+  },
+  "homepage": "https://github.com/ricku44/rescript-parser#readme",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
