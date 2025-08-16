@@ -20,10 +20,6 @@ class ReScriptParser {
     this.lines = input.split('\n');
     this.errors = [];
     this.sourceLength = input.length;
-    
-    if (typeof this.filename !== 'string') {
-      throw new Error('Filename must be a string');
-    }
   }
 
   parse() {
