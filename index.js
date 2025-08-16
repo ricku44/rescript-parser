@@ -347,7 +347,7 @@ class ReScriptParser {
 
   parseCodegenCalls(statements) {
     try {
-      const codegenMatch = this.input.match(/let\s+make:\s*(?:CodegenNativeComponent\.)?nativeComponentType<props>\s*=\s*(?:CodegenNativeComponent\.)?codegenNativeComponent\("([^"]+)"/);
+      const codegenMatch = this.input.match(/=\s*(?:CodegenNativeComponent\.)?codegenNativeComponent\("([^"]+)"/);
       if (!codegenMatch) return;
       
       const componentName = codegenMatch[1];
