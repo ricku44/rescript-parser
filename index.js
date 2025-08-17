@@ -255,7 +255,7 @@ class ReScriptParser {
           range: this.createRange(startPos, endPos),
           id: { 
             type: 'Identifier', 
-            name: typeName,
+            name: typeName.replace('spec', 'Spec'),
             loc: this.createLoc(startLine, this.getColumnNumber(startPos + 5), startLine, this.getColumnNumber(startPos + 5 + typeName.length)),
             range: this.createRange(startPos + 5, startPos + 5 + typeName.length)
           },
