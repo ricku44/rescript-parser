@@ -335,7 +335,18 @@ class ReScriptParser {
             raw: `"${moduleName}"`,
             loc: this.createLoc(startLine, this.getColumnNumber(startPos), endLine, this.getColumnNumber(endPos)),
             range: this.createRange(startPos, endPos)
-          }]
+          }],
+          typeArguments: {
+            type: 'TypeParameterInstantiation',
+            params: [
+              {
+                type: 'GenericTypeAnnotation',
+                id: {
+                  name: 'Spec'
+                }
+              }
+            ]
+          }
         }
       };
       
