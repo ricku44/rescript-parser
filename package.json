@@ -1,6 +1,6 @@
 {
   "name": "rescript-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ReScript parser for React Native TurboModules and Native Components",
   "main": "index.js",
   "keywords": [

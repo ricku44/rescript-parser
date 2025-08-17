@@ -232,7 +232,14 @@ class ReScriptParser {
             type: 'ObjectTypeAnnotation',
             loc: this.createLoc(startLine, this.getColumnNumber(startPos), endLine, this.getColumnNumber(endPos)),
             range: this.createRange(startPos, endPos),
-            properties: properties || []
+            properties: properties || [],
+            typeParameters: {
+              params: [
+                {
+                  properties: properties || []
+                }
+              ]
+            }
           }
         },
         exportKind: 'type'
@@ -714,6 +721,9 @@ class ReScriptParser {
                 name: 'viewProps',
                 loc: this.createLoc(1, 0, 1, 0),
                 range: this.createRange(0, 0)
+              },
+              id: {
+                name: 'ViewProps'
               },
               computed: false,
               loc: this.createLoc(1, 0, 1, 0),
